@@ -9,7 +9,7 @@ import time
 import urllib2
 
 startTime = time.time()
-proxyHandler = urllib2.ProxyHandler({"http": "http://phind:123456@proxy.tsdv.com.vn:3128"})
+proxyHandler = urllib2.ProxyHandler({"http": "http://user:pass@proxy.com.vn:3128"})
 opener = urllib2.build_opener(proxyHandler)
 urllib2.install_opener(opener)
 listRootSites = []
